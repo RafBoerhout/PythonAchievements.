@@ -42,4 +42,31 @@ Over 2 jaar wordt je 18
 SyntaxError: invalid syntax
 >>> output.py
 SyntaxError: invalid syntax
->>> 
+>>> >>> from random import randint
+>>> randint(0,1000)
+573
+>>> willekeurig_getal = randint(0,1000)
+>>>
+>>> willekeurig_getal
+843
+>>> print('Willekeurig getal tussen 0 en 1000: ' + str(willekeurig_getal))
+Willekeurig getal tussen 0 en 1000: 843
+>>> from datetime import datetime
+>>>
+>>> datum = datetime.now()
+>>>
+>>> print(datum)
+2020-09-23 11:29:18.401634
+>>> datum.strftime('%A %d %B %Y')
+'Wednesday 23 September 2020'
+>>> import locale
+>>> locale.setlocale(locale.LC_TIME, 'nl_NL')
+'nl_NL'
+>>> datum.strftime('%A %d %B %Y')
+'woensdag 23 september 2020'
+>>> locale.setlocale(locale.LC_TIME, 'it_IT')
+'it_IT'
+>>>
+>>> datum.strftime('%A %d %B %Y')
+'mercoledì 23 settembre 2020'
+>>>
